@@ -38,7 +38,7 @@ jobs:
 
           ssh-add private_key.pem
 
-          ssh -i private_key.pem ubuntu@65.0.26.243
+          ssh -i private_key.pem ubuntu@65.0.168.4
 
           sudo mkdir -p /var/www/react-app
 
