@@ -48,7 +48,7 @@ jobs:
         env:
           EC2_IP: ${{ secrets.EC2_IP }}
         run: >
-          scp -o StrictHostKeyChecking=no -i private_key.pem -r ./build
+          scp -o StrictHostKeyChecking=no -i private_key.pem -r /actions-runner/_work/Calculator/Calculator/target
           ubuntu@$EC2_IP:/var/www/react-app
       - name: Reset Permissions on EC2
         env:
